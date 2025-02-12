@@ -1,0 +1,25 @@
+@import "tailwindcss";    
+
+/* Fonts */
+.font-cinzel { font-family: 'Cinzel', serif; }
+.font-poppins { font-family: 'Poppins', sans-serif; }
+.font-cormoran-garamond { font-family: 'Cormorant Garamond', serif; }
+.font-playfair { font-family: 'Playfair Display', serif; }
+
+/* Text Color Palette */
+.text-primary { color: #2E3538; }
+.text-secondary { color: #D2B589; }
+.text-tertiary { color: #FDFAF0; }
+.text-quaternary { color: #F2F2F0; }
+.text-brown-mobile { color: #A2845E; }
+
+/* Background Color Palette */
+.bg-primary { background-color: #F2F2F0; }
+.bg-secondary { background-color: #FDFAF0; }
+.bg-tertiary { background-color: #D2B589; }
+.bg-quarternary { background-color: #EDE5DA; }
+.bg-gray-custom { background-color: #2E3538; }
+.bg-brown-mobile { background-color: #A2845E; }
+
+.border-primary { border-color: #D2B589; }
+.border-gray { border-color: #2E3538; }
