@@ -8,7 +8,7 @@ const GalleryRow1 = () => {
         <div className="flex flex-row items-center justify-center h-[408px] bg-secondary hidden md:hidden lg:flex">
             <div className="flex flex-col px-12 lg:px-16 w-2/5">
                 <div className="flex items-center space-x-4">
-                    <LineStroke width="w-1/4"/>
+                    <LineStroke width="w-1/4" className="lg:border-t-4"/>
                     <Heading level="h3" className="">GALLERY</Heading>
                 </div>
                 <Heading level="h2" className="pb-4">

@@ -2,7 +2,7 @@ import Image from "../atoms/Image";
 import LineStroke from "../atoms/LineStroke";
 import Heading from "../atoms/Heading";
 import Text from "../atoms/Text";
-import InfoBox from "./InfoBox";
+import InfoBox from "../molecules/InfoBox";
 import CircleIcon from "../atoms/CircleIcon";
 
 const ServiceContent = ({ clientName, description, imageSrc, clientIcon, clientMoto, serviceList }) => {
@@ -12,7 +12,7 @@ const ServiceContent = ({ clientName, description, imageSrc, clientIcon, clientM
             <div className="relative flex flex-col lg:flex-row justify-center pt-0 lg:pt-12 w-full lg:w-4/9">
                 {/* Title on Mobile */}
                 <div className="lg:hidden flex justify-start items-center space-x-2 pb-2">
-                    <LineStroke thickness="border-t-2" color="border-grey-custom" />
+                    <LineStroke />
                     <Heading level="h3">OUR B&B SERVICE</Heading>
                 </div>
 
@@ -20,7 +20,7 @@ const ServiceContent = ({ clientName, description, imageSrc, clientIcon, clientM
                 <Image src={imageSrc} alt="our service" className="h-[45vw] lg:h-[42vw] lg:w-full" />
 
                 {/* Info Box on Desktop, hidden on Mobile */}
-                <InfoBox className="hidden lg:flex w-[105%] translate-x-10 left-0 right-0" iconSrc={clientIcon} iconAlt={clientName}>
+                <InfoBox className="absolute bottom-10 hidden h-[120px] lg:flex w-[105%] translate-x-10 left-0 right-0" iconSrc={clientIcon} iconAlt={clientName}>
                     <div>
                         <Text className="text-[14px]">{clientMoto}</Text>
                     </div>
@@ -33,12 +33,12 @@ const ServiceContent = ({ clientName, description, imageSrc, clientIcon, clientM
                 <div className="flex flex-col">
                     {/* Title on Desktop */}
                     <div className="hidden lg:flex justify-start items-center space-x-8 pb-2">
-                        <LineStroke width="w-30"/>
+                        <LineStroke className="lg:w-30 lg:border-t-4"/>
                         <Heading level="h3">OUR B&B SERVICE</Heading>
                     </div>
 
                     <Heading level="h1" className="py-1">More Complete With Our Service</Heading>
-                    <Text className="text-[14px] lg:text-[20px] leading-[18px] lg:leading-[35px] pb-4 lg:pb-3" >{description}</Text>
+                    <Text className="text-justify text-[14px] lg:text-[20px] leading-[18px] lg:leading-[35px] pb-4 lg:pb-3" >{description}</Text>
 
                     <div class="grid grid-cols-2 grid-rows-3 gap-y-2 lg:gap-y-1 gap-x-2 lg:gap-x-1">
                         {serviceList.map((service, index) => (

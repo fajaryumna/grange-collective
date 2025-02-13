@@ -11,13 +11,13 @@ const InfoBox = ({
     className = "",
 }) => {
     return (
-        <div className={`absolute bottom-10 bg-white shadow-2xl space-x-6 h-[100px] w-[100%] flex flex-row items-center ${className}`}>
+        <div className={`bg-white shadow-xl space-x-6 h-[100px] flex flex-row items-center ${className}`}>
             <VerticalLine isVisible={hasVerticalLine} />
 
             <div className="flex items-center justify-center pl-12">
                 <IconImage src={iconSrc} alt={iconAlt} />
             </div>
-            <div>{children}</div>
+            {children}
             <HorizontalLine isVisible={hasHorizontalLine} />
         </div>
     );

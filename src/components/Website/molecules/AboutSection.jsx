@@ -17,7 +17,7 @@ const AboutSection = ({className=""}) => {
             <div className="w-10 border-t-4 mt-5 hidden lg:block"></div>
             <div className="w-9/10 lg:w-64">
                 <Heading level="h3" className="text-[32px] pb-1 lg:pb-4">About</Heading>
-                <Text className="text-[12px] lg:text-[14px] pb-1 lg:pb-4"> Stay connected with us and let’s know more stories about The Grance Collective and more, explore
+                <Text className="text-[12px] lg:text-[14px] pb-1 lg:pb-4 text-justify"> Stay connected with us and let’s know more stories about The Grance Collective and more, explore
                     us for get it.</Text>
 
                 <div className="flex space-x-4 mb-4">
