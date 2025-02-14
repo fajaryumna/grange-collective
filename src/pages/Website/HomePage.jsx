@@ -3,11 +3,11 @@ import HomePageTemplate from '../../components/Website/templates/HomePageTemplat
 
 const serviceData = [
     {
-        clientName: "Bread Yard",
+        name: "Bread Yard",
         description: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac. Magnis proin nibh aenean gravida nunc.",
         imageSrc: "/images/gallery/gallery4.png",
-        clientIcon: "/images/clients/BreadYard.svg",
-        clientMoto: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac.",
+        restoIcon: "/images/restaurant/BreadYard.svg",
+        restoMotto: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac.",
         serviceList: [
             { name: "Corporate Event", icon: "/images/icons/service2.svg" },
             { name: "Catering", icon: "/images/icons/service3.svg" },
@@ -17,11 +17,11 @@ const serviceData = [
         ],
     },
     {
-        clientName: "Granary",
+        name: "Granary",
         description: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac. Magnis proin nibh aenean gravida nunc. ",
         imageSrc: "/images/gallery/gallery4.png",
-        clientIcon: "/images/clients/Granary.svg",
-        clientMoto: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac.",
+        restoIcon: "/images/restaurant/Granary.svg",
+        restoMotto: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac.",
         serviceList:[
             { name: "Corporate Event", icon: "/images/icons/service2.svg" },
             { name: "Catering", icon: "/images/icons/service3.svg" },
@@ -31,11 +31,11 @@ const serviceData = [
         ],
     },
     {
-        clientName: "Hathaway",
+        name: "Hathaway",
         description: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac. Magnis proin nibh aenean gravida nunc. ",
         imageSrc: "/images/gallery/gallery4.png",
-        clientIcon: "/images/clients/Hathaway.svg",
-        clientMoto: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac.",
+        restoIcon: "/images/restaurant/Hathaway.svg",
+        restoMotto: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac.",
         serviceList:[
             { name: "Corporate Event", icon: "/images/icons/service2.svg" },
             { name: "Catering", icon: "/images/icons/service3.svg" },
@@ -45,11 +45,11 @@ const serviceData = [
         ],
     },
     {
-        clientName: "Vernacular",
+        name: "Vernacular",
         description: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac. Magnis proin nibh aenean gravida nunc. ",
         imageSrc: "/images/gallery/gallery4.png",
-        clientIcon: "/images/clients/Vernacular.svg",
-        clientMoto: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac.",
+        restoIcon: "/images/restaurant/Vernacular.svg",
+        restoMotto: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac.",
         serviceList:[
             { name: "Corporate Event", icon: "/images/icons/service2.svg" },
             { name: "Catering", icon: "/images/icons/service3.svg" },
@@ -64,36 +64,36 @@ const bannerData = [
     {
         name: "Bread Yard",
         imageSrc: "/images/banner/bread-yard.png",
-        logoSrc: "/images/clients/BreadYard.svg",
+        logoSrc: "/images/restaurant/BreadYard.svg",
         infoText: "Lorem ipsum dolor sit amet consectetur. Arcu cras interdum commodo dui metus vel urna.",
     },
     {
         name: "Granary",
         imageSrc: "/images/banner/granary.png",
-        logoSrc: "/images/clients/Granary.svg",
+        logoSrc: "/images/restaurant/Granary.svg",
         infoText: "Lorem ipsum dolor sit amet consectetur. Arcu cras interdum commodo dui metus vel urna.",
     },
     {
         name: "Hathway",
         imageSrc: "/images/banner/hathway.png",
-        logoSrc: "/images/clients/Hathaway.svg",
+        logoSrc: "/images/restaurant/Hathaway.svg",
         infoText: "Lorem ipsum dolor sit amet consectetur. Arcu cras interdum commodo dui metus vel urna.",
     },
     {
         name: "Vernacular",
         imageSrc: "/images/banner/vernacular-coffe.png",
-        logoSrc: "/images/clients/Vernacular.svg",
+        logoSrc: "/images/restaurant/Vernacular.svg",
         infoText: "Lorem ipsum dolor sit amet consectetur. Arcu cras interdum commodo dui metus vel urna.",
     },
 ];
 
 const overviewData = [
     {
-        clientName: "Bread Yard",
+        name: "Bread Yard",
         description: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac. Magnis proin nibh aenean gravida nunc.",
         topImage: "/images/overview.png",
         bottomImage: "/images/overview2.png",
-        clientIcon: "/images/clients/BreadYard.svg",
+        restoIcon: "/images/restaurant/BreadYard.svg",
         statistics: [
             { key: "totalMenu", value: "100+", text:"Of all menu that you can order" },
             { key: "dailyVisitors", value: "150+", text:"Daily Visitor to Our Coffee Shop" },
@@ -101,11 +101,11 @@ const overviewData = [
         ],
     },
     {
-        clientName: "Granary",
+        name: "Granary",
         description: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac. Magnis proin nibh aenean gravida nunc. ",
         topImage: "/images/overview.png",
         bottomImage: "/images/overview2.png",
-        clientIcon: "/images/clients/Granary.svg",
+        restoIcon: "/images/restaurant/Granary.svg",
         statistics: [
             { key: "totalMenu", value: "100+", text:"Of all menu that you can order" },
             { key: "dailyVisitors", value: "150+", text:"Daily Visitor to Our Coffee Shop" },
@@ -113,11 +113,11 @@ const overviewData = [
         ],
     },
     {
-        clientName: "Hathaway",
+        name: "Hathaway",
         description: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac. Magnis proin nibh aenean gravida nunc. ",
         topImage: "/images/overview.png",
         bottomImage: "/images/overview2.png",
-        clientIcon: "/images/clients/Hathaway.svg",
+        restoIcon: "/images/restaurant/Hathaway.svg",
         statistics: [
             { key: "totalMenu", value: "100+", text:"Of all menu that you can order" },
             { key: "dailyVisitors", value: "150+", text:"Daily Visitor to Our Coffee Shop" },
@@ -125,11 +125,11 @@ const overviewData = [
         ],
     },
     {
-        clientName: "Vernacular",
+        name: "Vernacular",
         description: "Lorem ipsum dolor sit amet consectetur. Pellentesque netus lobortis imperdiet et non ac. Magnis proin nibh aenean gravida nunc. ",
         topImage: "/images/overview.png",
         bottomImage: "/images/overview2.png",
-        clientIcon: "/images/clients/Vernacular.svg",
+        restoIcon: "/images/restaurant/Vernacular.svg",
         statistics: [
             { key: "totalMenu", value: "100+", text:"Of all menu that you can order" },
             { key: "dailyVisitors", value: "150+", text:"Daily Visitor to Our Coffee Shop" },
@@ -140,12 +140,10 @@ const overviewData = [
 
 export const HomePage = () => {
     return (
-        <>
-            <HomePageTemplate
-                bannerData={bannerData}
-                serviceData={serviceData}
-                overviewData={overviewData}
-            />
-        </>
+        <HomePageTemplate
+            bannerData={bannerData}
+            serviceData={serviceData}
+            overviewData={overviewData}
+        />
     );
 };  

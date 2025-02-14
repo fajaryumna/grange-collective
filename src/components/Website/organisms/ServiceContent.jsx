@@ -5,7 +5,7 @@ import Text from "../atoms/Text";
 import InfoBox from "../molecules/InfoBox";
 import CircleIcon from "../atoms/CircleIcon";
 
-const ServiceContent = ({ clientName, description, imageSrc, clientIcon, clientMoto, serviceList }) => {
+const ServiceContent = ({ name, description, imageSrc, restoIcon, restoMotto, serviceList }) => {
     return (
         <div className="min-w-full flex flex-col lg:flex-row lg:justify-between lg:items-center">
             {/* Col 1 */}
@@ -20,9 +20,9 @@ const ServiceContent = ({ clientName, description, imageSrc, clientIcon, clientM
                 <Image src={imageSrc} alt="our service" className="h-[45vw] lg:h-[42vw] lg:w-full" />
 
                 {/* Info Box on Desktop, hidden on Mobile */}
-                <InfoBox className="absolute bottom-10 hidden h-[120px] lg:flex w-[105%] translate-x-10 left-0 right-0" iconSrc={clientIcon} iconAlt={clientName}>
+                <InfoBox className="absolute bottom-10 hidden h-[120px] lg:flex w-[105%] translate-x-10 left-0 right-0" iconSrc={restoIcon} iconAlt={name}>
                     <div>
-                        <Text className="text-[14px]">{clientMoto}</Text>
+                        <Text className="text-[14px]">{restoMotto}</Text>
                     </div>
                 </InfoBox>
 

@@ -1,5 +1,5 @@
-const Text = ({ children, className = "" }) => {
-    return <p className={`font-poppins text-primary ${className}`}>{children}</p>;
+const Text = ({ children, font="font-poppins", className = "" }) => {
+    return <p className={`${font} ${className}`}>{children}</p>;
 };
 
 export default Text;

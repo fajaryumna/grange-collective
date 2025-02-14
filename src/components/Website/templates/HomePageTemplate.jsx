@@ -17,7 +17,6 @@ const HomePageTemplate = ({bannerData, serviceData, overviewData}) => {
 
             <HomeBannerMobileCarousel banners={bannerData}></HomeBannerMobileCarousel>
             <HomeBannerDekstopContainter banners={bannerData}></HomeBannerDekstopContainter>
-
             <OverviewCarousel overviews={overviewData}></OverviewCarousel>
             <ServiceCarousel services={serviceData}></ServiceCarousel>
             <OurClientsSection></OurClientsSection>

@@ -9,9 +9,9 @@ const FooterSection = ({ title, links, className="" }) => {
             <div className="w-full">
                 <Heading level="h3" className="text-[32px] pb-1 lg:pb-4">{title}</Heading>
                 <ul className="space-y-1 lg:space-y-4 font-poppins text-[18px]">
-                    {links.map((link) => (
-                        <li>
-                            <LinkItem key={link.label} href={link.href}>{link.label}</LinkItem>
+                    {links.map((link, index) => (
+                        <li key={index} >
+                            <LinkItem href={link.href}>{link.label}</LinkItem>
                         </li>
                     ))}
                 </ul>

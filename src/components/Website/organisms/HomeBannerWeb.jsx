@@ -2,11 +2,14 @@ import Image from "../atoms/Image";
 import InfoBox from "../molecules/InfoBox";
 import RotatedLogo from "../molecules/RotatedLogo";
 import Text from "../atoms/Text";
+import Overlay from "../atoms/Overlay";
 
 const HomeBannerWeb = ({ imageSrc, altText, infoText, logoSrc, isTopBanner, zIndex, index }) => {
     return (
         <div 
-            className={`relative flex flex-row justify-center w-full lg:flex" ${index !== 0 ? "-ml-[39vw]" : "-mr-[0vw]"}`}
+            className={`relative flex flex-row justify-center w-full lg:flex" 
+                ${index !== 0 ? "-ml-[39vw]" : "-mr-[0vw]"} 
+                ${isTopBanner ? "shadow-[0_0_30px_rgba(0,0,0,0.7)]" : "shadow-none" }`}
             style={{
                 zIndex: zIndex,            
             }}
@@ -14,10 +17,11 @@ const HomeBannerWeb = ({ imageSrc, altText, infoText, logoSrc, isTopBanner, zInd
 
             <div className="img-banner relative min-w-full lg:w-[50vw]">
                 <Image src={imageSrc} alt={altText} className="w-full h-[45vw] lg:h-[38vw] object-cover"/>
-                <div 
-                    className="absolute inset-0 bg-white transition-opacity duration-700 banner-overlay"
-                    style={{ opacity: isTopBanner ? "0" : "0.4" }}
-                ></div>
+                <Overlay 
+                    color="bg-white" 
+                    opacity={isTopBanner ? "0" : "0.5"} 
+                    className="rounded-lg"
+                />
             </div>
 
             {/* Info Box  */}

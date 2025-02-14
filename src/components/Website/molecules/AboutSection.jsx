@@ -21,8 +21,8 @@ const AboutSection = ({className=""}) => {
                     us for get it.</Text>
 
                 <div className="flex space-x-4 mb-4">
-                    {socialLinks.map(({ href, src, alt }) => (
-                        <CircleIcon href={href} src={src} alt={alt} />
+                    {socialLinks.map(({ href, src, alt }, index) => (
+                        <CircleIcon key={index} href={href} src={src} alt={alt} />
                     ))}
                 </div>
 

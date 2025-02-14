@@ -5,7 +5,7 @@ import Text from "../atoms/Text";
 import InfoBox from "../molecules/InfoBox";
 import StatisticItem from "../molecules/StaticticItem";
 
-const OverviewContent = ({ clientName, description, topImage, bottomImage, clientIcon, statistics }) => {
+const OverviewContent = ({ name, description, topImage, bottomImage, restoIcon, statistics }) => {
     return (
         <div className="min-w-full flex flex-col lg:flex-row lg:justify-between">
             {/* Title on mobile */}
@@ -31,16 +31,16 @@ const OverviewContent = ({ clientName, description, topImage, bottomImage, clien
                             <StatisticItem key={statistic.key} number={statistic.value} text={statistic.text} borderColor={"border-brown-mobile"} textColor={"text-brown-mobile"}/>
                         ))}
                     </div>
-                   
+                    
+                    {/* Description */}
                     <Text className="text-justify text-[14px] lg:text-[18px] leading-[18px] lg:leading-[35px] pb-2 lg:pb-4">
-                        Lorem ipsum dolor sit amet consectetur. Pellentesque netus
-                        lobortis imperdiet et non ac. Magnis proin nibh aenean gravida nunc.
+                       {description}    
                     </Text>
 
                     {/* box section on web */}
                     <InfoBox
-                        iconSrc={clientIcon}
-                        iconAlt={clientName}
+                        iconSrc={restoIcon}
+                        iconAlt={name}
                         hasHorizontalLine={false}
                         className="hidden lg:flex flex-row h-[130px] w-[150%] relative justify-between"
                     >

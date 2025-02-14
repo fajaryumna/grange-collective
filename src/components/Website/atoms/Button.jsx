@@ -1,11 +1,12 @@
 import React from 'react';
+
 const Button = ({ children, onClick, variant = 'primary', className = "" }) => {
-  const baseStyle = 'border-2 px-6 py-2 flex flex-row items-center justify-center transition-colors duration-200 cursor-pointer font-cormoran-garamond';
+  const baseStyle = 'px-6 py-2 flex flex-row items-center justify-center font-cormoran-garamond';
   const variants = {
-    primary: 'bg-primary text-black hover:bg-gray-200',  //button white
-    secondary: 'bg-gray-custom text-tertiary hover:bg-gray-200',  //button gray
-    tertiary: 'bg-tertiary text-primary', //button brown
-};
+    primary: 'border-2 bg-primary text-black transition duration-300 hover:bg-red-500 cursor-pointer', 
+    secondary: 'bg-gray-custom text-tertiary transition duration-300 hover:bg-gray-300 cursor-pointer',
+    tertiary: 'bg-tertiary text-primary transition duration-300 hover:bg-yellow-500 cursor-pointer',
+  };
 
   return (
     <button 
